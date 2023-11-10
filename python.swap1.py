@@ -1,0 +1,12 @@
+n=int(input("Enter n"))
+m=n%10
+print("Last digit= ",m)
+x=n
+while(x>=10):
+    x=x//10
+    print("First digit= ",x)
+    print("Last digit= ",m)
+    t=x
+    x=m
+    m=t
+    print("n after swapping= ",t,x,m)
